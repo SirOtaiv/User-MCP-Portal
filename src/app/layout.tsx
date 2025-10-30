@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { AllCommunityModule, ModuleRegistry } from "ag-grid-community";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +24,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  ModuleRegistry.registerModules([AllCommunityModule]);
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
