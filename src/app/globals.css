@@ -135,3 +135,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* globals.css */
+.ag-theme-quartz {
+  --ag-background-color: hsl(var(--background));
+  --ag-foreground-color: hsl(var(--foreground));
+  --ag-border-color: hsl(var(--border));
+  --ag-header-background-color: hsl(var(--muted));
+}
+
+.dark .ag-theme-quartz {
+  --ag-background-color: hsl(var(--background));
+  --ag-foreground-color: hsl(var(--foreground));
+  --ag-border-color: hsl(240 5% 26%); /* Borda mais clara no dark */
+  --ag-header-background-color: hsl(var(--muted));
+  --ag-row-border-color: hsl(240 5% 26%);
+  --ag-header-column-separator-color: hsl(240 5% 26%);
+  --ag-column-border-color: hsl(240 5% 26%);
+}
