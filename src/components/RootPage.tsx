@@ -37,6 +37,10 @@ export default function RootPage({ rowData }: PropsType) {
     }
   ], [])
 
+  const defaultColDef: ColDef = {
+    flex: 1,
+  };
+
   return (
     <div className="flex flex-col h-full min-h-0 p-4 gap-8">
       <div className="flex gap-2">
@@ -55,6 +59,7 @@ export default function RootPage({ rowData }: PropsType) {
           rowData={rowData}
           columnDefs={colDefs}
           domLayout="normal"
+          defaultColDef={defaultColDef}
         />
       </div>
     </div>
