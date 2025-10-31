@@ -7,7 +7,6 @@ import { Input } from "../components/ui/input";
 import { ModuleRegistry, AllCommunityModule } from "ag-grid-community";
 import { type ColDef } from "ag-grid-community";
 import { AgGridReact } from "ag-grid-react";
-// import { useTheme } from "next-themes";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
@@ -22,7 +21,6 @@ type PropsType = {
 }
 
 export default function RootPage({ rowData }: PropsType) {
-  // const { theme } = useTheme()
 
   const colDefs = useMemo<ColDef<PersonsMCPTableRow>[]>(() => [
     {
