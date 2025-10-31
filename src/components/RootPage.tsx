@@ -19,8 +19,10 @@ type personSearchFormType = {
 
 export type PersonsMCPTableRow = {
    name: string;
-   age: number;
+   description: string;
    occupation: string;
+   xp_time: number;
+   age: number;
 }
 
 type PropsType = {
