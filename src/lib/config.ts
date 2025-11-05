@@ -1,0 +1,1 @@
+export const mcpServerApiUrl = process.env.MCP_SERVER_API_URL;
